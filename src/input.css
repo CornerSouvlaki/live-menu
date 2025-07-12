@@ -1,0 +1,13 @@
+/*
+* File for the input of css for tailwindcss 
+* Created: 12/07/2025
+*/
+
+@import "tailwindcss";
+
+/* basic colors and fonts that will be used */
+@theme{
+  --color-primary: #1a1a18;
+  --color-secondary: #e0e0e0;
+  --font-Inter: Inter;
+}
