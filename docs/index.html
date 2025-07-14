@@ -1,12 +1,58 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en-US">
   <head>
-    <link href="output.css">
+    <!-- meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Panagiotis Kaoudis">
+    <meta name="description" content="live-menu of the restaurant corner that is located at Plakias,Greece">
+    <meta name="robots" content="index, follow">
+    <meta charset="utf-8">
+
+    <!-- title -->
+    <title>Corner live-menu</title>
+
+    <!-- compiled CSS from tailwind -->
+    <link href="output.css" rel="stylesheet">
+
+    <!-- pre-loading images -->
+    <link href="../assets/Logo.png" rel="preload" as="image">
+    <link href="../assets/globe.png" rel="preload" as="image">
+    <link href="../assets/dropdown.png" rel="preload" as="image">
   </head>
   
-  <body>
-    <h1 class="font-Inter">Hello this font is inter??</h1>
+  <body class="bg-primary flex flex-col items-center space-y-30">
+    <!-- LOGO -->
+    <img src="../assets/Logo.png" class="mt-30 w-301">
+
+    <!-- Choose language-->
+    <div class="flex flex-col items-center space-y-3">
+      <img src="../assets/globe.png" class="w-17 h-17">
+      <div class="flex justify-center space-x-4">
+        <button class="border-1 border-secondary w-56 h-37 rounded-full"> <h1 class="text-secondary text-[12px]">GR</h1> </button>
+        <button class="border-1 border-secondary w-56 h-37 rounded-full bg-secondary"> <h2 class="text-primary text-[12px]">ENG</h2> </button>
+      </div>
+    </div>
+
+    <!-- MENU line -->
+    <div class="flex flex-col items-center space-y-2">
+      <h1 class="text-secondary text-[12px]">MENU</h1>
+      <div class="w-screen">
+        <hr class="text-secondary">
+      </div>
+    </div>
+
+    <!-- Salads & Starters -->
+    <button class="w-364 h-70 rounded-3xl bg-secondary">
+      <div class="flex justify-center items-center space-x-145">
+        <h1 class="text-primary text-[20px]">Salads & Starters</h1>
+        <img src="../assets/dropdown.png">
+      </div>
+    </button>
+
+    <ul>
+    </ul>
+
   </body>
 
 </html>

@@ -3,9 +3,9 @@
 
 # compile tailwindcss
 tailwind:
-	npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
+	npx @tailwindcss/cli -i ./docs/input.css -o ./docs/output.css --watch
 
 # run live-server
 live:
-	live-server --open=src/index.html --host=0.0.0.0
+	live-server --open=docs/index.html --host=0.0.0.0
 
