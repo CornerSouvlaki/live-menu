@@ -17,15 +17,13 @@
 
     <!-- pre-loading images -->
     <link href="assets/Logo.jpg" rel="preload" as="image">
-    <link href="assets/globe.png" rel="preload" as="image">
-    <link href="assets/dropdown.png" rel="preload" as="image">
     <link href="assets/globe.svg" rel="preload" as="image">
     <link href="assets/dropdown.svg" rel="preload" as="image">
   </head>
   
   <body class="bg-primary flex flex-col items-center space-y-30">
     <!-- LOGO -->
-    <img src="assets/Logo.jpg" class="mt-30 w-301 h-auto">
+    <img src="assets/Logo.jpg" class="mt-30 w-301.1 h-auto">
 
     <!-- Choose language-->
     <div class="flex flex-col items-center space-y-3">
@@ -45,15 +43,46 @@
     </div>
 
     <!-- Salads & Starters -->
-    <button class="w-364 h-70 rounded-3xl bg-secondary">
-      <div class="flex justify-center items-center space-x-145">
-        <h1 class="text-primary text-[20px]">Salads & Starters</h1>
-        <img src="assets/dropdown.png" alt="drop" srcset="assets/dropdown.svg">
-      </div>
-    </button>
+    <div class="flex flex-col items-center space-y-20">
+      <button class="w-364 h-70 rounded-3xl bg-secondary">
+        <div class="flex justify-center items-center space-x-135">
+          <h1 class="text-primary text-[20px]">Salads & Starters</h1>
+          <img src="assets/dropdown.png" alt="drop" srcset="assets/dropdown.svg">
+        </div>
+      </button>
 
-    <ul>
-    </ul>
+      <ul class="flex flex-col items-center space-y-20">
+        <li>
+          <div class="flex flex-col items-center justify-center border-1 border-secondary rounded-2xl w-337 h-68">
+            <h2 class="text-secondary text-[15px]">Greek Salad</h2>
+            <p class="text-secondary text-[10px] whitespace-pre">fresh tomato, cucumber, olives, onions, peppers,<br>                     local cheese galomyzithra.</p>
+            <h2 class="text-secondary text-[15px]">7,80€</h2>
+          </div>
+        </li>
+
+        <li>
+          <div class="flex flex-col items-center justify-center border-1 border-secondary rounded-2xl w-337 h-68">
+            <h2 class="text-secondary text-[15px]">Chicken Salad</h2>
+            <p class="text-secondary text-[10px]">
+              chicken, lettuce, gruyere cheese, croutons, chicken ceasar dressing.
+            </p>
+            <h2 class="text-secondary text-[15px]">7,90€</h2>
+          </div>
+        </li>
+
+        <li>
+          <div class="flex flex-col items-center justify-center border-1 border-secondary rounded-2xl w-337 h-68">
+            <h2 class="text-secondary text-[15px]">Corner Salad Special</h2>
+            <p class="text-secondary text-[10px]">
+              rocket, spinach, lettuce, gruyere cheese, nuts, fig, pomegranate, honey, balsamic dressing.
+            </p>
+            <h2 class="text-secondary text-[15px]">8,90€</h2>
+          </div>
+        </li>
+
+
+      </ul>
+    </div>
 
   </body>
 
