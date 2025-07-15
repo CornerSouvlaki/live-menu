@@ -167,17 +167,17 @@
   .flex {
     display: flex;
   }
-  .h-17 {
-    height: calc(var(--spacing) * 17);
-  }
   .h-37 {
     height: calc(var(--spacing) * 37);
   }
   .h-70 {
     height: calc(var(--spacing) * 70);
   }
-  .w-17 {
-    width: calc(var(--spacing) * 17);
+  .h-120 {
+    height: calc(var(--spacing) * 120);
+  }
+  .h-auto {
+    height: auto;
   }
   .w-56 {
     width: calc(var(--spacing) * 56);
@@ -187,6 +187,9 @@
   }
   .w-364 {
     width: calc(var(--spacing) * 364);
+  }
+  .w-full {
+    width: 100%;
   }
   .w-screen {
     width: 100vw;
