@@ -55,7 +55,7 @@ function handleDishes(){
         dishesList.className = "flex flex-col items-center space-y-20 animate-fade-in-down"
     }else{
         // animations
-        dishesList.className = "flex flex-col items-center space-y-20 animate-fade-out-up animete-duration-400"
+        dishesList.className = "flex flex-col items-center space-y-20 animate-fade-out-up animate-duration-400"
         setTimeout(() => {
             dishesList.hidden = true;
         }, 400);
@@ -84,7 +84,7 @@ function handleMixed(){
         mixedList.className = "flex flex-col items-center space-y-20 animate-fade-in-down"
     }else{
         // animations
-        mixedList.className = "flex flex-col items-center space-y-20 animate-fade-out-up animete-duration-400"
+        mixedList.className = "flex flex-col items-center space-y-20 animate-fade-out-up animate-duration-400"
         setTimeout(() => {
             mixedList.hidden = true;
             dropM.srcset = "assets/dropdown.svg";
@@ -115,7 +115,7 @@ function handleSouvlaki(){
         souvlakiList.className = "flex flex-col items-center space-y-20 animate-fade-in-down"
     }else{
         // animations
-        souvlakiList.className = "flex flex-col items-center space-y-20 animate-fade-out-up animete-duration-400"
+        souvlakiList.className = "flex flex-col items-center space-y-20 animate-fade-out-up animate-duration-400"
         setTimeout(() => {
             souvlakiList.hidden = true;
         }, 400);
@@ -143,7 +143,7 @@ function handleDrinks(){
         drinksList.className = "flex flex-col items-center space-y-20 animate-fade-in-down"
     }else{
         // animations
-        drinksList.className = "flex flex-col items-center space-y-20 animate-fade-out-up animete-duration-400"
+        drinksList.className = "flex flex-col items-center space-y-20 animate-fade-out-up animate-duration-400"
         setTimeout(() => {
             drinksList.hidden = true;
             dropDr.srcset = "assets/dropdown.svg";
