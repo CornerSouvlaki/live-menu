@@ -162,35 +162,17 @@
   }
 }
 @layer utilities {
-  .absolute {
-    position: absolute;
-  }
   .relative {
     position: relative;
   }
-  .right-10 {
-    right: calc(var(--spacing) * 10);
+  .sticky {
+    position: sticky;
   }
-  .right-50 {
-    right: calc(var(--spacing) * 50);
-  }
-  .left-2 {
-    left: calc(var(--spacing) * 2);
+  .top-20 {
+    top: calc(var(--spacing) * 20);
   }
   .left-8 {
     left: calc(var(--spacing) * 8);
-  }
-  .left-10 {
-    left: calc(var(--spacing) * 10);
-  }
-  .left-20 {
-    left: calc(var(--spacing) * 20);
-  }
-  .left-40 {
-    left: calc(var(--spacing) * 40);
-  }
-  .left-50 {
-    left: calc(var(--spacing) * 50);
   }
   .mt-30 {
     margin-top: calc(var(--spacing) * 30);
@@ -230,6 +212,27 @@
   }
   .w-screen {
     width: 100vw;
+  }
+  .animate-fade-in {
+    animation: fade-in 0.6s ease-in both;
+  }
+  .animate-fade-in-down {
+    animation: fade-in-down 0.6s ease-in-out both;
+  }
+  .animate-fade-out {
+    animation: fade-out 0.6s ease-out both;
+  }
+  .animate-fade-out-up {
+    animation: fade-out-up 0.6s ease-out both;
+  }
+  .animate-scale {
+    animation: scale 0.6s ease-out both;
+  }
+  .animate-slide-in-top {
+    animation: slide-in-top 0.6s ease-out both;
+  }
+  .animate-slide-out-bottom {
+    animation: slide-out-bottom 0.6s ease-out both;
   }
   .flex-col {
     flex-direction: column;
@@ -303,13 +306,6 @@
       margin-inline-end: calc(calc(var(--spacing) * 195) * calc(1 - var(--tw-space-x-reverse)));
     }
   }
-  .space-x-230 {
-    :where(& > :not(:last-child)) {
-      --tw-space-x-reverse: 0;
-      margin-inline-start: calc(calc(var(--spacing) * 230) * var(--tw-space-x-reverse));
-      margin-inline-end: calc(calc(var(--spacing) * 230) * calc(1 - var(--tw-space-x-reverse)));
-    }
-  }
   .space-x-240 {
     :where(& > :not(:last-child)) {
       --tw-space-x-reverse: 0;
@@ -360,6 +356,33 @@
   .text-secondary {
     color: var(--color-secondary);
   }
+  .animate-delay-0 {
+    animation-delay: 0ms;
+  }
+  .animate-delay-100 {
+    animation-delay: 100ms;
+  }
+  .animate-delay-150 {
+    animation-delay: 150ms;
+  }
+  .animate-delay-200 {
+    animation-delay: 200ms;
+  }
+  .animate-delay-250 {
+    animation-delay: 250ms;
+  }
+  .animate-delay-300 {
+    animation-delay: 300ms;
+  }
+  .animate-delay-400 {
+    animation-delay: 400ms;
+  }
+  .animate-delay-500 {
+    animation-delay: 500ms;
+  }
+  .animate-duration-400 {
+    animation-duration: 400ms;
+  }
 }
 @property --tw-space-y-reverse {
   syntax: "*";
@@ -375,6 +398,66 @@
   syntax: "*";
   inherits: false;
   initial-value: solid;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes slide-out-bottom {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.10);
+  }
+}
+@keyframes fade-in-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fade-out-up {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
 }
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {

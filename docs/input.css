@@ -4,6 +4,7 @@
 */
 
 @import "tailwindcss";
+@plugin '@midudev/tailwind-animations';
 
 /* basic colors and fonts that will be used */
 @theme{
