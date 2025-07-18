@@ -159,6 +159,38 @@ function handleDrinks(){
     }
 }
 
+// handle language changes
+function changeLanguage(){
+    const bodyID = document.body.id;
+    const grButton = document.getElementById("GRbut");
+    const engButton = document.getElementById("ENGbut");
+    const hGR = document.getElementById("GRh");
+    const hENG = document.getElementById("ENGh");
+
+    if (bodyID === "GR"){
+        // for GR button
+        grButton.classList.add("bg-secondary");
+        hGR.classList.remove("text-secondary");
+        hGR.classList.add("text-primary");
+
+        // for ENG button
+        engButton.classList.remove("bg-secondary");
+        hENG.classList.remove("text-primary");
+        hENG.classList.add("text-secondary");
+    }
+    else if (bodyID === "ENG"){
+        // for ENG button
+        engButton.classList.add("bg-secondary");
+        hENG.classList.remove("text-secondary");
+        hENG.classList.add("text-primary");
+
+        // for GR button
+        grButton.classList.remove("bg-secondary");
+        hGR.classList.remove("text-primary");
+        hGR.classList.add("text-secondary");
+    }
+}
+
 // event listeners
 const saladButton = document.getElementById("Salads");
 saladButton.addEventListener("click",handleSalads);
@@ -174,3 +206,7 @@ souvlakiButton.addEventListener("click",handleSouvlaki);
 
 const drinksButton = document.getElementById("Drinks");
 drinksButton.addEventListener("click",handleDrinks);
+
+// call this in an non blocking event loop to handle changes
+changeLanguage();
+
