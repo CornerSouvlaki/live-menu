@@ -1,0 +1,2 @@
+# This is here so it wont say that is 100% made with Makefile while its not!
+Makefile linguist-detectable=false
