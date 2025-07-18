@@ -1,2 +1,5 @@
 # This is here so it wont say that is 100% made with Makefile while its not!
 Makefile linguist-detectable=false
+
+# And this will treat whatever there is in docs/ as source code
+docs/** linguist-documentation=false
