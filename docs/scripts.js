@@ -19,8 +19,8 @@ function handleSalads(){
     if (saladList.hidden === true){
         saladList.hidden = false;
         dropS.hidden = true;
-        dropS.srcset = "assets/dropup.svg";
-        dropS.src = "assets/dropup.png";
+        dropS.srcset = "assets/general/dropup.svg";
+        dropS.src = "assets/general/dropup.png";
         dropS.alt = "dropup";
         transDrop(dropS);
         // i could have used classList.add for this but i didnt know its
@@ -33,8 +33,8 @@ function handleSalads(){
         }, 400);
 
         dropS.hidden = true;
-        dropS.srcset = "assets/dropdown.svg";
-        dropS.src = "assets/dropdown.png";
+        dropS.srcset = "assets/general/dropdown.svg";
+        dropS.src = "assets/general/dropdown.png";
         dropS.alt = "dropdown";
         transDrop(dropS);
     }
@@ -48,8 +48,8 @@ function handleDishes(){
     if (dishesList.hidden === true){
         dishesList.hidden = false;
         dropD.hidden = true;
-        dropD.srcset = "assets/dropup.svg";
-        dropD.src = "assets/dropup.png";
+        dropD.srcset = "assets/general/dropup.svg";
+        dropD.src = "assets/general/dropup.png";
         dropD.alt = "dropup";
         transDrop(dropD);
         dishesList.className = "flex flex-col items-center space-y-20 animate-fade-in-down"
@@ -61,8 +61,8 @@ function handleDishes(){
         }, 400);
 
         dropD.hidden = true;
-        dropD.srcset = "assets/dropdown.svg";
-        dropD.src = "assets/dropdown.png";
+        dropD.srcset = "assets/general/dropdown.svg";
+        dropD.src = "assets/general/dropdown.png";
         dropD.alt = "dropdown";
         transDrop(dropD);
 
@@ -77,8 +77,8 @@ function handleMixed(){
     if (mixedList.hidden === true){
         mixedList.hidden = false;
         dropM.hidden = true;
-        dropM.srcset = "assets/dropup.svg";
-        dropM.src = "assets/dropup.png";
+        dropM.srcset = "assets/general/dropup.svg";
+        dropM.src = "assets/general/dropup.png";
         dropM.alt = "dropup";
         transDrop(dropM);
         mixedList.className = "flex flex-col items-center space-y-20 animate-fade-in-down"
@@ -87,14 +87,14 @@ function handleMixed(){
         mixedList.className = "flex flex-col items-center space-y-20 animate-fade-out-up animate-duration-400"
         setTimeout(() => {
             mixedList.hidden = true;
-            dropM.srcset = "assets/dropdown.svg";
-            dropM.src = "assets/dropdown.png";
+            dropM.srcset = "assets/general/dropdown.svg";
+            dropM.src = "assets/general/dropdown.png";
             dropM.alt = "dropdown";
         }, 400);
 
         dropM.hidden = true;
-        dropM.srcset = "assets/dropdown.svg";
-        dropM.src = "assets/dropdown.png";
+        dropM.srcset = "assets/general/dropdown.svg";
+        dropM.src = "assets/general/dropdown.png";
         dropM.alt = "dropdown";
         transDrop(dropM);
     }
@@ -108,8 +108,8 @@ function handleSouvlaki(){
     if (souvlakiList.hidden === true){
         souvlakiList.hidden = false;
         dropS.hidden = true;
-        dropS.srcset = "assets/dropup.svg";
-        dropS.src = "assets/dropup.png";
+        dropS.srcset = "assets/general/dropup.svg";
+        dropS.src = "assets/general/dropup.png";
         dropS.alt = "dropup";
         transDrop(dropS);
         souvlakiList.className = "flex flex-col items-center space-y-20 animate-fade-in-down"
@@ -121,8 +121,8 @@ function handleSouvlaki(){
         }, 400);
 
         dropS.hidden = true;
-        dropS.srcset = "assets/dropdown.svg";
-        dropS.src = "assets/dropdown.png";
+        dropS.srcset = "assets/general/dropdown.svg";
+        dropS.src = "assets/general/dropdown.png";
         dropS.alt = "dropdown";
         transDrop(dropS);
     }
@@ -136,8 +136,8 @@ function handleDrinks(){
     if (drinksList.hidden === true){
         drinksList.hidden = false;
         dropDr.hidden = true;
-        dropDr.srcset = "assets/dropup.svg";
-        dropDr.src = "assets/dropup.png";
+        dropDr.srcset = "assets/general/dropup.svg";
+        dropDr.src = "assets/general/dropup.png";
         dropDr.alt = "dropup";
         transDrop(dropDr);
         drinksList.className = "flex flex-col items-center space-y-20 animate-fade-in-down"
@@ -146,14 +146,14 @@ function handleDrinks(){
         drinksList.className = "flex flex-col items-center space-y-20 animate-fade-out-up animate-duration-400"
         setTimeout(() => {
             drinksList.hidden = true;
-            dropDr.srcset = "assets/dropdown.svg";
-            dropDr.src = "assets/dropdown.png";
+            dropDr.srcset = "assets/general/dropdown.svg";
+            dropDr.src = "assets/general/dropdown.png";
             dropDr.alt = "dropdown";
         }, 400);
 
         dropDr.hidden = true;
-        dropDr.srcset = "assets/dropdown.svg";
-        dropDr.src = "assets/dropdown.png";
+        dropDr.srcset = "assets/general/dropdown.svg";
+        dropDr.src = "assets/general/dropdown.png";
         dropDr.alt = "dropdown";
         transDrop(dropDr);
     }
