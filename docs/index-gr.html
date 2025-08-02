@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+
+<!-- Greek index.html -->
+<!-- Created: 01/08/2025 -->
+
+<html lang="el">
+  <head>
+    <!-- meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Corner">
+    <meta name="description" content="live-menu of the restaurant corner that is located at Plakias,Greece">
+    <meta name="robots" content="index, follow">
+    <meta charset="utf-8">
+
+    <!-- title -->
+    <title>Corner live-menu</title>
+
+    <!-- compiled CSS from tailwind -->
+    <link href="output.css" rel="stylesheet">
+
+    <!-- link javascript -->
+    <script src="scripts.js" type="module"></script>
+
+    <!-- pre-loading images -->
+    <link href="assets/general/Logo.jpg" rel="preload" as="image">
+    <link href="assets/general/globe.svg" rel="preload" as="image">
+    <link href="assets/general/dropdown.svg" rel="preload" as="image">
+    <link href="assets/menu/chickenSalad.webp" rel="preload" as="image">
+    <link href="assets/menu/falafel.webp" rel="preload" as="image">
+    <link href="assets/menu/potatoesSO.webp" rel="preload" as="image">
+    <link href="assets/menu/skepasti.webp" rel="preload" as="image">
+    <link href="assets/menu/souvBeef.webp" rel="preload" as="image">
+    <link href="assets/menu/souvHaloum.webp" rel="preload" as="image">
+    <link href="assets/menu/souvPork.webp" rel="preload" as="image">
+    <link href="assets/menu/tzatziki.webp" rel="preload" as="image">
+    <link href="assets/menu/gyrosPlate.webp" rel="preload" as="image">
+    <link href="assets/menu/greekSalad.webp" rel="preload" as="image"> 
+  </head>
+  
+  <body class="bg-primary flex flex-col items-center space-y-20" id="GR">
+    <!-- LOGO -->
+    <img src="assets/general/Logo.jpg" class="mt-30 w-301.1 h-auto animate-scale">
+
+    <!-- Choose language-->
+    <div class="flex flex-col items-center space-y-3 animate-scale">
+      <img src="assets/general/globe.png" alt="globe" srcset="assets/general/globe.svg">
+      <div class="flex justify-center space-x-4">
+        <a href="index-gr.html" target="_self"><button class="border-1 border-secondary w-56 h-37 rounded-full" id="GRbut"> <h1 class="text-[12px]" id="GRh">GR</h1> </button> </a>
+        <a href="index.html" target="_self"><button class="border-1 border-secondary w-56 h-37 rounded-full" id="ENGbut"> <h2 class="text-[12px]" id="ENGh">ENG</h2> </button> </a>
+      </div>
+    </div>
+
+    <!-- MENU line -->
+    <div class="flex flex-col items-center space-y-2 animate-scale">
+      <h1 class="text-secondary text-[15px] font-medium">Μενού</h1>
+      <div class="w-screen">
+        <hr class="text-secondary">
+      </div>
+    </div>
+
+    <!-- Salads & Starters -->
+    <div class="flex flex-col items-center space-y-20 mb-5 animate-fade-in animate-delay-100">
+      <button class="w-364 h-70 rounded-3xl bg-secondary sticky top-60 z-10" id="Salads">
+        <div class="flex justify-center items-center space-x-100">
+          <h1 class="text-primary text-[20px]">Σαλάτες και Ορεκτικά</h1>
+          <img src="assets/general/dropdown.png" alt="dropdown" srcset="assets/general/dropdown.svg" id="dropSalads">
+        </div>
+      </button>
+
+      <ul class="flex flex-col items-center space-y-20" hidden id="SaladsList">
+        <li>
+          <div class="flex border-1 items-center justify-between border-secondary rounded-2xl w-330 h-76">
+            <div class="flex flex-col items-center justify-center w-211">
+              <h2 class="text-secondary text-[14px]">Χωριάτικη σαλάτα</h2>
+              <p class="text-secondary text-[11px] whitespace-pre">         φρέσκια ντομάτα, αγγούρι, ελιές,<br>  κρεμμύδι, πιπεριά, ντόπια γαλομυζήθρα.</p>
+              <h2 class="text-secondary text-[14px]">7,80€</h2>
+            </div>
+
+            <img src="assets/menu/greekSalad.webp" class="border-1 object-cover border-secondary rounded-r-2xl w-115 h-76">
+          </div>
+        </li>
+
+        <li>
+          <div class="flex items-center justify-between border-1 border-secondary rounded-2xl w-330 h-76">
+            <div class="flex flex-col items-center justify-center w-211">
+              <h2 class="text-secondary text-[14px]">Κοτοσαλάτα</h2>
+              <p class="text-secondary text-[11px] whitespace-pre">   κοτόπουλο, μαρούλι, γραβιέρα,<br>        κρουτόν, ceasar dressing.</p>
+              <h2 class="text-secondary text-[14px]">7,90€</h2>
+            </div>
+
+            <img src="assets/menu/chickenSalad.webp" class="object-cover border-1 border-secondary rounded-r-2xl w-115 h-76">
+          </div>
+        </li>
+
+        <li>
+          <div class="flex items-center justify-between border-1 border-secondary rounded-2xl w-330 h-76">
+            <div class="flex flex-col items-center justify-center w-211">
+              <h2 class="text-secondary text-[14px]">Κόρνερ σαλάτα</h2>
+              <p class="text-secondary text-[10px] whitespace-pre"> ρόκα, σπανάκι, λόλα, γραβιέρα, σύκο, ρόδι,<br>     ξηρούς καρπούς, μέλι, βαλσάμικο σως.</p>
+              <h2 class="text-secondary text-[14px]">8,90€</h2>
+            </div>
+            
+            <div class="border-1 border-secondary bg-green-900 rounded-r-2xl w-115 h-76"></div>
+          </div>
+        </li>
+
+
+        <li>
+          <div class="flex items-center justify-between border-1 border-secondary rounded-2xl w-330 h-76">
+            <div class="flex flex-col items-center space-y-6 w-211">
+              <h2 class="text-secondary text-[14px]">Τζατζίκι</h2>
+              <h2 class="text-secondary text-[14px]">4,90€</h2>
+            </div>
+
+            <img src="assets/menu/tzatziki.webp" class="border-1 object-cover border-secondary rounded-r-2xl w-115 h-76">
+          </div>
+        </li>
+
+
+        <li>
+          <div class="flex items-center justify-between border-1 border-secondary rounded-2xl w-330 h-76">
+            <div class="flex flex-col items-center space-y-6 w-211">
+              <h2 class="text-secondary text-[14px]">Τυροκαυτερή</h2>
+              <h2 class="text-secondary text-[14px]">4,40€</h2>
+            </div>
+
+            <div class="border-1 border-secondary bg-green-900 rounded-r-2xl w-115 h-76"></div>
+          </div>
+        </li>
+
+
+        <li>
+          <div class="flex items-center justify-between border-1 border-secondary rounded-2xl w-330 h-76">
+            <div class="flex flex-col items-center space-y-6 w-211">
+              <h2 class="text-secondary text-[14px]">Κρητική γραβιέρα σαγανάκι</h2>
+              <h2 class="text-secondary text-[14px]">5,50€</h2>
+            </div>
+
+            <div class="border-1 border-secondary bg-green-900 rounded-r-2xl w-115 h-76"></div>
+          </div>
+        </li>
+
+
+        <li>
+          <div class="flex items-center justify-between border-1 border-secondary rounded-2xl w-330 h-76">
+            <div class="flex flex-col items-center space-y-6 w-211">
+              <h2 class="text-secondary text-[14px]">Ντάκος</h2>
+              <h2 class="text-secondary text-[14px]">5,50€</h2>
+            </div>
+
+            <div class="border-1 border-secondary bg-green-900 rounded-r-2xl w-115 h-76"></div>
+          </div>
+        </li>
+
+
+        <li>
+          <div class="flex items-center justify-between border-1 border-secondary rounded-2xl w-330 h-76">
+            <div class="flex flex-col items-center space-y-6 w-211">
+              <h2 class="text-secondary text-[14px]">Σκορδόψωμο</h2>
+              <h2 class="text-secondary text-[14px]">4,30€</h2>
+            </div>
+
+            <div class="border-1 border-secondary bg-green-900 rounded-r-2xl w-115 h-76"></div>
+          </div>
+        </li>
+
+
+        <li>
+          <div class="flex items-center justify-between border-1 border-secondary rounded-2xl w-330 h-76">
+            <div class="flex flex-col items-center space-y-6 w-211">
+              <h2 class="text-secondary text-[14px]">Πατάτες με αλάτι και ρίγανη</h2>
+              <h2 class="text-secondary text-[14px]">4,50€</h2>
+            </div>
+
+            <img src="assets/menu/potatoesSO.webp" class="border-1 object-cover border-secondary rounded-r-2xl w-115 h-76">
+          </div>
+        </li>
+
+
+        <li>
+          <div class="flex items-center justify-between border-1 border-secondary rounded-2xl w-330 h-76">
+            <div class="flex flex-col items-center space-y-6 w-211">
+              <h2 class="text-secondary text-[14px]">Πατάτες με τυρί</h2>
+              <h2 class="text-secondary text-[14px]">5,00€</h2>
+            </div>
+
+            <div class="border-1 border-secondary bg-green-900 rounded-r-2xl w-115 h-76"></div>
+          </div>
+        </li>
+
+
+        <li class="mb-20">
+          <div class="flex items-center justify-between border-1 border-secondary rounded-2xl w-330 h-76">
+            <div class="flex flex-col items-center space-y-6 w-211">
+              <h2 class="text-secondary text-[14px]">Πατάτες σπέσιαλ</h2>
+              <h2 class="text-secondary text-[14px]">5,80€</h2>
+            </div>
+
+            <div class="border-1 border-secondary bg-green-900 rounded-r-2xl w-115 h-76"></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+  <!-- Our Dishes -->
+    <div class="flex flex-col items-center space-y-20 mb-5 animate-fade-in animate-delay-200">
+      <button class="w-364 h-70 rounded-3xl bg-secondary sticky top-60 z-10" id="Dishes">
+        <div class="flex justify-center items-center space-x-200">
+          <h1 class="text-primary text-[20px]">Our Dishes</h1>
+          <img src="assets/general/dropdown.png" alt="dropdown" srcset="assets/general/dropdown.svg" id="dropDishes">
+        </div>
+      </button>
+
+      <ul class="flex flex-col items-center space-y-20" hidden id="DishesList">
+
+        <li>
+          <div class="flex items-center justify-between border-1 border-secondary rounded-2xl w-330 h-76">
+            <div class="flex flex-col items-center justify-center w-211">
+              <h2 class="text-secondary text-[14px]">Gyros</h2>
+              <p class="text-secondary text-[11px] whitespace-pre"> Dish is served with fries,tzatziki,<br>                  pita & salad.</p>
+              <h2 class="text-secondary text-[14px]">10,80€</h2>
+            </div>
+
+            <img src="assets/menu/gyrosPlate.webp" class="border-1 object-cover border-secondary rounded-r-2xl w-115 h-76">
+          </div>
+        </li>
+
+
+        <li>
+          <div class="flex items-center justify-between border-1 border-secondary rounded-2xl w-330 h-76">
+            <div class="flex flex-col items-center justify-center w-211">
+              <h2 class="text-secondary text-[14px]">Chicken</h2>
+              <p class="text-secondary text-[11px] whitespace-pre"> Dish is served with fries,tzatziki,<br>                  pita & salad.</p>
+              <h2 class="text-secondary text-[14px]">10,80€</h2>
+            </div>
+
+            <div class="border-1 border-secondary bg-green-900 rounded-r-2xl w-115 h-76"></div>
+          </div>
+        </li>
+
+
+        <li>
+          <div class="flex items-center justify-between border-1 border-secondary rounded-2xl w-330 h-76">
+            <div class="flex flex-col items-center justify-center w-211">
+              <h2 class="text-secondary text-[14px]">Pork</h2>
+              <p class="text-secondary text-[11px] whitespace-pre"> Dish is served with fries,tzatziki,<br>                  pita & salad.</p>
+              <h2 class="text-secondary text-[14px]">10,80€</h2>
+            </div>
+
+            <div class="border-1 border-secondary bg-green-900 rounded-r-2xl w-115 h-76"></div>
+          </div>
+        </li>
+
+
+        <li>
+          <div class="flex items-center justify-between border-1 border-secondary rounded-2xl w-330 h-76">
+            <div class="flex flex-col items-center justify-center w-211">
+              <h2 class="text-secondary text-[14px]">Kebab</h2>
+              <p class="text-secondary text-[11px] whitespace-pre"> Dish is served with fries,tzatziki,<br>                  pita & salad.</p>
+              <h2 class="text-secondary text-[14px]">10,80€</h2>
+            </div>
+
+            <div class="border-1 border-secondary bg-green-900 rounded-r-2xl w-115 h-76"></div>
+          </div>
+        </li>
+
+
+        <li>
+          <div class="flex items-center justify-between border-1 border-secondary rounded-2xl w-330 h-76">
+            <div class="flex flex-col items-center justify-center w-211">
+              <h2 class="text-secondary text-[14px]">Kebab giaourtlou</h2>
+              <p class="text-secondary text-[11px] whitespace-pre"> Dish is served with fries,tzatziki,<br>                  pita & salad.</p>
+              <h2 class="text-secondary text-[14px]">12,90€</h2>
+            </div>
+
+            <div class="border-1 border-secondary bg-green-900 rounded-r-2xl w-115 h-76"></div>
+          </div>
+        </li>
+
+
+        <li>
+          <div class="flex items-center justify-between border-1 border-secondary rounded-2xl w-330 h-76">
+            <div class="flex flex-col items-center justify-center w-211">
+              <h2 class="text-secondary text-[14px]">Beef burger</h2>
+              <p class="text-secondary text-[11px] whitespace-pre"> Dish is served with fries,tzatziki,<br>                  pita & salad.</p>
+              <h2 class="text-secondary text-[14px]">11,00€</h2>
+            </div>
+
+            <div class="border-1 border-secondary bg-green-900 rounded-r-2xl w-115 h-76"></div>
+          </div>
+        </li>
+
+
+        <li>
+          <div class="flex items-center justify-between border-1 border-secondary rounded-2xl w-330 h-76">
+            <div class="flex flex-col items-center justify-center w-211">
+              <h2 class="text-secondary text-[14px]">Beef burger stuffed</h2>
+              <p class="text-secondary text-[11px] whitespace-pre"> Dish is served with fries,tzatziki,<br>                  pita & salad.</p>
+              <h2 class="text-secondary text-[14px]">13,50€</h2>
+            </div>
+
+            <div class="border-1 border-secondary bg-green-900 rounded-r-2xl w-115 h-76"></div>
+          </div>
+        </li>
+
+
+        <li>
+          <div class="flex items-center justify-between border-1 border-secondary rounded-2xl w-330 h-76">
+            <div class="flex flex-col items-center justify-center w-211">
+              <h2 class="text-secondary text-[14px]">Pork belly</h2>
+              <p class="text-secondary text-[11px] whitespace-pre"> Dish is served with fries,tzatziki,<br>                  pita & salad.</p>
+              <h2 class="text-secondary text-[14px]">10,80€</h2>
+            </div>
+
+            <div class="border-1 border-secondary bg-green-900 rounded-r-2xl w-115 h-76"></div>
+          </div>
+        </li>
+
+
+        <li>
+          <div class="flex items-center justify-between border-1 border-secondary rounded-2xl w-330 h-76">
+            <div class="flex flex-col items-center justify-center w-211">
+              <h2 class="text-secondary text-[14px]">Lamb</h2>
+              <p class="text-secondary text-[11px] whitespace-pre"> Dish is served with fries,tzatziki,<br>                  pita & salad.</p>
+              <h2 class="text-secondary text-[14px]">12,90€</h2>
+            </div>
+
+            <div class="border-1 border-secondary bg-green-900 rounded-r-2xl w-115 h-76"></div>
+          </div>
+        </li>
+
+
+        <li class="mb-20">
+          <div class="flex items-center justify-between border-1 border-secondary rounded-2xl w-330 h-76">
+            <div class="flex flex-col items-center justify-center w-211">
+              <h2 class="text-secondary text-[14px]">Beef</h2>
+              <p class="text-secondary text-[11px] whitespace-pre"> Dish is served with fries,tzatziki,<br>                  pita & salad.</p>
+              <h2 class="text-secondary text-[14px]">13,50€</h2>
+            </div>
+
+            <div class="border-1 border-secondary bg-green-900 rounded-r-2xl w-115 h-76"></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Mixed Plates -->
+    <div class="flex flex-col items-center space-y-20 mb-5 animate-fade-in animate-delay-300">
+      <button class="w-364 h-70 rounded-3xl bg-secondary sticky top-60 z-10" id="Mixed">
+        <div class="flex justify-center items-center space-x-188">
+          <h1 class="text-primary text-[20px]">Mixed Plates</h1>
+          <img src="assets/general/dropdown.png" alt="dropdown" srcset="assets/general/dropdown.svg" id="dropMixed">
+        </div>
+      </button>
+
+      <ul class="flex flex-col items-center space-y-20" hidden id="MixedList">
+
+        <li>
+          <div class="flex items-center justify-between border-1 border-secondary rounded-2xl w-330 h-76">
+            <div class="flex flex-col items-center justify-center w-211">
+              <h2 class="text-secondary text-[14px]">Gyros plate for 2</h2>
+              <p class="text-secondary text-[11px] whitespace-pre">gyros, meatball, pork, chicken, <br>sausage haloumi, mushrooms.</p>
+              <h2 class="text-secondary text-[14px]">20,00€</h2>
+            </div>
+
+            <div class="border-1 border-secondary bg-green-900 rounded-r-2xl w-115 h-76"></div>
+          </div>
+        </li>
+
+
+        <li>
+          <div class="flex items-center justify-between border-1 border-secondary rounded-2xl w-330 h-76">
+            <div class="flex flex-col items-center justify-center w-211">
+              <h2 class="text-secondary text-[14px]">Mix souvlaki plate for 2</h2>
+              <p class="text-secondary text-[11px] whitespace-pre">lamb, kebab, pork, chicken, mushrooms <br>                     sausage haloumi.</p>
+              <h2 class="text-secondary text-[14px]">25,00€</h2>
+            </div>
+
+            <div class="border-1 border-secondary bg-green-900 rounded-r-2xl w-115 h-76"></div>
+          </div>
+        </li>
+
+        <li>
+          <div class="flex items-center justify-between border-1 border-secondary rounded-2xl w-330 h-76">
+            <div class="flex flex-col items-center justify-center space-y-6 w-211">
+              <h2 class="text-secondary text-[14px]">Mixed vegetarian plate</h2>
+              <p class="text-secondary text-[11px] whitespace-pre"> falafel, haloumi & mushrooms.</p>
+              <h2 class="text-secondary text-[14px]">9,80€</h2>
+            </div>
+
+            <div class="border-1 border-secondary bg-green-900 rounded-r-2xl w-115 h-76"></div>
+          </div>
+        </li>
+
+        <li class="mb-20">
+          <h2 class="text-[14px] text-secondary font-medium">*All dishes are served with fries, tzatziki and salad.</h2>
+        </li>
+        
+      </ul>
+    </div>
+
+    <!-- Souvlaki Pita -->
+    <div class="flex flex-col items-center space-y-20 mb-5 animate-fade-in animate-delay-400">
+      <button class="w-364 h-70 rounded-3xl bg-secondary sticky top-60 z-10" id="Souvlaki">
+        <div class="flex justify-center items-center space-x-185">
+          <h1 class="text-primary text-[20px]">Souvlaki Pita</h1>
+          <img src="assets/general/dropdown.png" alt="dropdown" srcset="assets/general/dropdown.svg" id="dropSouvlaki">
+        </div>
+      </button>
+
+      <ul class="flex flex-col items-center space-y-20" hidden id="SouvlakiList">
+        
+        <li>
+          <div class="flex items-center justify-between border-1 border-secondary rounded-2xl w-330 h-76">
+            <div class="flex flex-col items-center space-y-6 w-211">
+              <h2 class="text-secondary text-[14px]">Gyros</h2>
+              <h2 class="text-secondary text-[14px]">4,00€</h2>
+            </div>
+
+            <img src="assets/menu/souvPork.webp" class="border-1 object-cover border-secondary rounded-r-2xl w-115 h-76">
+          </div>
+        </li>
+
+
+        <li>
+          <div class="flex items-center justify-between border-1 border-secondary rounded-2xl w-330 h-76">
+            <div class="flex flex-col items-center space-y-6 w-211">
+              <h2 class="text-secondary text-[14px]">Chicken</h2>
+              <h2 class="text-secondary text-[14px]">4,00€</h2>
+            </div>
+
+            <div class="border-1 border-secondary bg-green-900 rounded-r-2xl w-115 h-76"></div>
+          </div>
+        </li>
+
+
+        <li>
+          <div class="flex items-center justify-between border-1 border-secondary rounded-2xl w-330 h-76">
+            <div class="flex flex-col items-center space-y-6 w-211">
+              <h2 class="text-secondary text-[14px]">Lamb souvlaki</h2>
+              <h2 class="text-secondary text-[14px]">5,00€</h2>
+            </div>
+
+            <div class="border-1 border-secondary bg-green-900 rounded-r-2xl w-115 h-76"></div>
+          </div>
+        </li>
+
+
+        <li>
+          <div class="flex items-center justify-between border-1 border-secondary rounded-2xl w-330 h-76">
+            <div class="flex flex-col items-center space-y-6 w-211">
+              <h2 class="text-secondary text-[14px]">Beef souvlaki</h2>
+              <h2 class="text-secondary text-[14px]">5,00€</h2>
+            </div>
+
+            <img src="assets/menu/souvBeef.webp" class="border-1 object-cover border-secondary rounded-r-2xl w-115 h-76">
+          </div>
+        </li>
+
+
+        <li>
+          <div class="flex items-center justify-between border-1 border-secondary rounded-2xl w-330 h-76">
+            <div class="flex flex-col items-center space-y-6 w-211">
+              <h2 class="text-secondary text-[14px]">Pork belly</h2>
+              <h2 class="text-secondary text-[14px]">4,00€</h2>
+            </div>
+
+            <div class="border-1 border-secondary bg-green-900 rounded-r-2xl w-115 h-76"></div>
+          </div>
+        </li>
+
+
+        <li>
+          <div class="flex items-center justify-between border-1 border-secondary rounded-2xl w-330 h-76">
+            <div class="flex flex-col items-center space-y-6 w-211">
+              <h2 class="text-secondary text-[14px]">Meatball souvlaki</h2>
+              <h2 class="text-secondary text-[14px]">4,50€</h2>
+            </div>
+
+            <div class="border-1 border-secondary bg-green-900 rounded-r-2xl w-115 h-76"></div>
+          </div>
+        </li>
+
+
+        <li>
+          <div class="flex items-center justify-between border-1 border-secondary rounded-2xl w-330 h-76">
+            <div class="flex flex-col items-center space-y-6 w-211">
+              <h2 class="text-secondary text-[14px]">Kebab souvlaki</h2>
+              <h2 class="text-secondary text-[14px]">4,00€</h2>
+            </div>
+
+            <div class="border-1 border-secondary bg-green-900 rounded-r-2xl w-115 h-76"></div>
+          </div>
+        </li>
+
+
+        <li>
+          <div class="flex items-center justify-between border-1 border-secondary rounded-2xl w-330 h-76">
+            <div class="flex flex-col items-center space-y-6 w-211">
+              <h2 class="text-secondary text-[14px]">Sausage souvlaki</h2>
+              <h2 class="text-secondary text-[14px]">4,00€</h2>
+            </div>
+
+            <div class="border-1 border-secondary bg-green-900 rounded-r-2xl w-115 h-76"></div>
+          </div>
+        </li>
+
+
+        <li>
+          <div class="flex items-center justify-between border-1 border-secondary rounded-2xl w-330 h-76">
+            <div class="flex flex-col items-center space-y-6 w-211">
+              <h2 class="text-secondary text-[14px]">Mushrooms</h2>
+              <h2 class="text-secondary text-[14px]">4,00€</h2>
+            </div>
+
+            <div class="border-1 border-secondary bg-green-900 rounded-r-2xl w-115 h-76"></div>
+          </div>
+        </li>
+
+
+        <li>
+          <div class="flex items-center justify-between border-1 border-secondary rounded-2xl w-330 h-76">
+            <div class="flex flex-col items-center space-y-6 w-211">
+              <h2 class="text-secondary text-[14px]">Haloumi</h2>
+              <h2 class="text-secondary text-[14px]">4,00€</h2>
+            </div>
+
+            <img src="assets/menu/souvHaloum.webp" class="border-1 object-cover border-secondary rounded-r-2xl w-115 h-76">
+          </div>
+        </li>
+
+
+        <li>
+          <div class="flex items-center justify-between border-1 border-secondary rounded-2xl w-330 h-76">
+            <div class="flex flex-col items-center space-y-6 w-211">
+              <h2 class="text-secondary text-[14px]">Shrimp</h2>
+              <h2 class="text-secondary text-[14px]">4,00€</h2>
+            </div>
+
+            <div class="border-1 border-secondary bg-green-900 rounded-r-2xl w-115 h-76"></div>
+          </div>
+        </li>
+
+
+        <li>
+          <div class="flex items-center justify-between border-1 border-secondary rounded-2xl w-330 h-76">
+            <div class="flex flex-col items-center space-y-6 w-211">
+              <h2 class="text-secondary text-[14px]">Skepasti</h2>
+              <h2 class="text-secondary text-[14px]">8,00€</h2>
+            </div>
+
+            <img src="assets/menu/skepasti.webp" class="border-1 object-cover border-secondary rounded-r-2xl w-115 h-76">
+          </div>
+        </li>
+
+
+        <li>
+          <div class="flex items-center justify-between border-1 border-secondary rounded-2xl w-330 h-76">
+            <div class="flex flex-col items-center space-y-6 w-211">
+              <h2 class="text-secondary text-[14px]">Falafel</h2>
+              <h2 class="text-secondary text-[14px]">5,00€</h2>
+            </div>
+
+            <img src="assets/menu/falafel.webp" class="border-1 object-cover border-secondary rounded-r-2xl w-115 h-76">
+          </div>
+        </li>
+
+        <li class="mb-20">
+          <h2 class="text-secondary text-[14px] whitespace-pre font-medium">All pita can be made with Arabic pie or Bread <br>                                   +1.5€</h2>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Drinks -->
+    <div class="flex flex-col items-center space-y-20 mb-5 animate-fade-in animate-delay-500">
+      <button class="w-364 h-70 rounded-3xl bg-secondary sticky top-60 z-10" id="Drinks">
+        <div class="flex justify-center items-center space-x-240">
+          <h1 class="text-primary text-[20px]">Drinks</h1>
+          <img src="assets/general/dropdown.png" alt="dropdown" srcset="assets/general/dropdown.svg" id="dropDrinks">
+        </div>
+      </button>
+
+      <ul class="flex flex-col items-center space-y-20" hidden id="DrinksList">
+        <li>
+          <h1 class="text-secondary text-[14px] font-medium relative left-8">Soft Drinks</h1>
+          <div class="w-337">
+            <hr class="text-secondary">
+         </div>
+        </li>
+
+        <li>
+          <div class="flex flex-col items-center justify-center border-1 border-secondary rounded-2xl w-337 h-68 space-y-6">
+            <h2 class="text-secondary text-[14px]">Coca cola - zero</h2>
+            <h2 class="text-secondary text-[14px]">2,50€</h2>
+          </div>
+        </li>
+
+        <li>
+          <div class="flex flex-col items-center justify-center border-1 border-secondary rounded-2xl w-337 h-68 space-y-6">
+            <h2 class="text-secondary text-[14px]">Sprite</h2>
+            <h2 class="text-secondary text-[14px]">2,50€</h2>
+          </div>
+        </li>
+
+        <li>
+          <div class="flex flex-col items-center justify-center border-1 border-secondary rounded-2xl w-337 h-68 space-y-6">
+            <h2 class="text-secondary text-[14px]">Orangeade</h2>
+            <h2 class="text-secondary text-[14px]">2,50€</h2>
+          </div>
+        </li>
+
+        <li>
+          <div class="flex flex-col items-center justify-center border-1 border-secondary rounded-2xl w-337 h-68 space-y-6">
+            <h2 class="text-secondary text-[14px]">Lemonade</h2>
+            <h2 class="text-secondary text-[14px]">2,50€</h2>
+          </div>
+        </li>
+
+        <li>
+          <div class="flex flex-col items-center justify-center border-1 border-secondary rounded-2xl w-337 h-68 space-y-6">
+            <h2 class="text-secondary text-[14px]">Soda Water</h2>
+            <h2 class="text-secondary text-[14px]">2,50€</h2>
+          </div>
+        </li>
+
+        <li>
+          <div class="flex flex-col items-center justify-center border-1 border-secondary rounded-2xl w-337 h-68 space-y-6">
+            <h2 class="text-secondary text-[14px]">Still Water 1L / 0,5L</h2>
+            <h2 class="text-secondary text-[14px]">1,00€ / 0,50€</h2>
+          </div>
+        </li>
+
+        <li>
+          <div class="flex flex-col items-center justify-center border-1 border-secondary rounded-2xl w-337 h-68 space-y-6">
+            <h2 class="text-secondary text-[14px]">Sparkling Water 0,75L / 0,33L</h2>
+            <h2 class="text-secondary text-[14px]">3,50€ / 2,50€</h2>
+          </div>
+        </li>
+
+
+        <li>
+          <h1 class="text-secondary text-[14px] font-medium relative left-8">Beers</h1>
+          <div class="w-337">
+            <hr class="text-secondary">
+         </div>
+        </li>
+        
+        <li>
+          <div class="flex flex-col items-center justify-center border-1 border-secondary rounded-2xl w-337 h-68 space-y-6">
+            <h2 class="text-secondary text-[14px]">Alfa</h2>
+            <h2 class="text-secondary text-[14px]">4,50€</h2>
+          </div>
+        </li>
+
+        <li>
+          <div class="flex flex-col items-center justify-center border-1 border-secondary rounded-2xl w-337 h-68 space-y-6">
+            <h2 class="text-secondary text-[14px]">Lira (Local Beer)</h2>
+            <h2 class="text-secondary text-[14px]">4,50€</h2>
+          </div>
+        </li>
+
+        <li>
+          <div class="flex flex-col items-center justify-center border-1 border-secondary rounded-2xl w-337 h-68 space-y-6">
+            <h2 class="text-secondary text-[14px]">Draught MAMOS 0,4L / 0,3L</h2>
+            <h2 class="text-secondary text-[14px]">4,50€ / 3,50€</h2>
+          </div>
+        </li>
+
+
+        <li>
+          <h1 class="text-secondary font-medium text-[14px] relative left-8">Wine Local Bio</h1>
+          <div class="w-337">
+            <hr class="text-secondary">
+         </div>
+        </li>
+        
+
+        <li>
+          <div class="flex flex-col items-center justify-center border-1 border-secondary rounded-2xl w-337 h-68 space-y-6">
+            <h2 class="text-secondary text-[14px]">White 250ml / 500ml</h2>
+            <h2 class="text-secondary text-[14px]">4,00€ / 7,50€</h2>
+          </div>
+        </li>
+
+        <li>
+          <div class="flex flex-col items-center justify-center border-1 border-secondary rounded-2xl w-337 h-68 space-y-6">
+            <h2 class="text-secondary text-[14px]">Red 250ml / 500ml</h2>
+            <h2 class="text-secondary text-[14px]">4,00€ / 7,50€</h2>
+          </div>
+        </li>
+
+
+        <li>
+          <div class="flex flex-col items-center justify-center border-1 border-secondary rounded-2xl w-337 h-68 space-y-6">
+            <h2 class="text-secondary text-[14px]">Retsina kexribari</h2>
+            <h2 class="text-secondary text-[14px]">8,00€</h2>
+          </div>
+        </li>
+
+
+        <li class="mb-20">
+          <div class="flex flex-col items-center justify-center border-1 border-secondary rounded-2xl w-337 h-68 space-y-6">
+            <h2 class="text-secondary text-[14px]">Raki Caraf</h2>
+            <h2 class="text-secondary text-[14px]">6,00€</h2>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
+
