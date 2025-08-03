@@ -461,7 +461,7 @@
 @layer components {
   .outsideCard {
     display: flex;
-    height: calc(var(--spacing) * 76);
+    height: calc(var(--spacing) * 78);
     width: calc(var(--spacing) * 330);
     align-items: center;
     justify-content: space-between;
@@ -485,8 +485,8 @@
     justify-content: center;
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 0;
-      margin-block-start: calc(calc(var(--spacing) * 6) * var(--tw-space-y-reverse));
-      margin-block-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-y-reverse)));
+      margin-block-start: calc(calc(var(--spacing) * 7) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 7) * calc(1 - var(--tw-space-y-reverse)));
     }
   }
   .drinks {
@@ -507,7 +507,7 @@
     border-color: var(--color-secondary);
   }
   .menuimg {
-    height: calc(var(--spacing) * 76);
+    height: calc(var(--spacing) * 78);
     width: calc(var(--spacing) * 100);
     border-top-right-radius: var(--radius-2xl);
     border-bottom-right-radius: var(--radius-2xl);
