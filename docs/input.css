@@ -57,10 +57,10 @@
 
 @layer base{
   h2{
-   @apply text-secondary text-[15px] 
+   @apply text-secondary text-[14px] 
   }
 
   p{
-    @apply text-secondary text-[12px] whitespace-pre 
+    @apply text-secondary text-[11px] whitespace-pre 
   }
 }
