@@ -4,7 +4,6 @@
 */
 
 @import "tailwindcss";
-@import "@fontsource/inter";
 @plugin '@midudev/tailwind-animations';
 
 /* basic colors and fonts that will be used */
@@ -63,9 +62,5 @@
 
   p{
     @apply text-secondary text-[12px] whitespace-pre 
-  }
-
-  body{
-    font-family: "Inter", "sans-serif";
   }
 }
