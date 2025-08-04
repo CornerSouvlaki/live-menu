@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "@fontsource/inter": "^5.2.6",
     "@midudev/tailwind-animations": "^0.2.0",
     "@tailwindcss/cli": "^4.1.11",
     "tailwindcss": "^4.1.11"

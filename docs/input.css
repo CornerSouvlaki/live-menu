@@ -16,17 +16,17 @@
 @layer components{
   /* outside part of the menu lists*/
   .outsideCard{
-    @apply flex border-1 items-center justify-between border-secondary rounded-2xl w-330 h-78 
+    @apply flex border-1 items-center justify-between border-secondary rounded-2xl w-330 h-79 
   }
 
   /* inside part of the menu lists without space */
   .insideCard{
-    @apply flex flex-col items-center justify-center w-211 
+    @apply flex flex-col items-center justify-center w-228
   }
 
   /* inside part of the menu lists with space */
   .insideCardSpace{
-   @apply flex flex-col items-center justify-center space-y-7 w-211 
+   @apply flex flex-col items-center justify-center space-y-7 w-228
   }
 
   /* for all of the drinks */
@@ -36,7 +36,7 @@
 
   /* all of the menu images */
   .menuimg{
-    @apply border-1 object-cover border-secondary rounded-r-2xl w-100 h-78
+    @apply border-1 object-cover border-secondary rounded-r-2xl w-100 h-79
   }
 
   /* menu buttons */
@@ -51,16 +51,16 @@
 
   /* the header inside the button */
   .hbut{
-    @apply text-primary text-[20px] text-left w-170
+    @apply text-primary text-[20px] text-left w-210
   }
 }
 
 @layer base{
   h2{
-   @apply text-secondary text-[14px] 
+   @apply text-secondary text-[15px] 
   }
 
   p{
-    @apply text-secondary text-[11px] whitespace-pre 
+    @apply text-secondary text-[13px] whitespace-pre 
   }
 }
